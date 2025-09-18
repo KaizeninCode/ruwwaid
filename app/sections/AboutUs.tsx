@@ -45,7 +45,7 @@ const AboutUs = () => {
         </div>
       </div>
         <div className="grid lg:grid-cols-2 mx-auto md:mt-24 lg:gap-32 md:gap-16 gap-4">
-            <div className="rounded-xl shadow-xl bg-[url(/values.jpg)] bg-center bg-cover max-lg:h-96 w-full h-full"/>
+            <div className="rounded-xl max-md:hidden shadow-xl bg-[url(/values.jpg)] bg-center bg-cover max-lg:h-96 w-full h-full"/>
             <div className="p-4 max-md:text-center">
                 <h3 className="font-bold lg:text-5xl text-3xl text-[#a48137] mb-4">Our Core Values</h3>
                 {coreValues.map((value) => (

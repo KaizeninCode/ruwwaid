@@ -2,6 +2,7 @@ import React from 'react'
 import MobileNav from './components/MobileNav'
 import HeroSection from './sections/HeroSection'
 import AboutUs from './sections/AboutUs'
+import OurServices from './sections/OurServices'
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
     <MobileNav/>
     <HeroSection/>
     <AboutUs/>
+    <OurServices/>
     </>
   )
 }
