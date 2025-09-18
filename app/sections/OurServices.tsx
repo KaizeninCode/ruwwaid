@@ -45,6 +45,17 @@ const OurServices = () => {
         "Trusted Compliance Experts",
         "Tailored and Practical Delivery",
     ]
+
+    const clients = [
+        '/urban-point.png',
+        '/macaash.png',
+        '/mayaah.png',
+        '/hawd.png',
+        '/barre.png',
+        '/viewpoint.png',
+        '/hyat.png',
+        '/vivacom.png'
+    ]
     return (
         <section id='our-services' className='max-w-7xl mx-auto px-4 py-16 min-h-screen'>
           <h1 className="lg:text-5xl text-3xl font-bold mb-4 text-[#a47138] text-center">Our Services</h1> 
@@ -66,31 +77,37 @@ const OurServices = () => {
           </div>
           <div className="grid lg:grid-cols-2 gap-16 lg:my-24 my-8">
                 <div className='max-md:hidden bg-[url(/services2.jpg) bg-cover bg-center rounded-lg shadow-lg h-[500]'/>
-            <div>
-                <h1 className="lg:text-4xl text-xl text-[#a47138] mb-4">Labor Law and Compliance Advisory</h1>
-                {labourLaws.map((service) => (
-                    <li key={service}  className='lg:text-xl ml-4'>{service}</li>
-                ))}
-                <h1 className="lg:text-4xl text-xl text-[#a47138] mt-8 mb-4">Organizational Management and Research</h1>
+                <div>
+                    <h1 className="lg:text-4xl text-xl text-[#a47138] mb-4">Labor Law and Compliance Advisory</h1>
+                    {labourLaws.map((service) => (
+                        <li key={service}  className='lg:text-xl ml-4'>{service}</li>
+                    ))}
+                    <h1 className="lg:text-4xl text-xl text-[#a47138] mt-8 mb-4">Organizational Management and Research</h1>
 
-                {organizationLaws.map((strategy) => (
-                    <li key={strategy} className='lg:text-xl ml-4'>{strategy}</li>
-                ))}
-            </div>
+                    {organizationLaws.map((strategy) => (
+                        <li key={strategy} className='lg:text-xl ml-4'>{strategy}</li>
+                    ))}
+                </div>
           </div>
           <div className="grid lg:grid-cols-2 gap-16 lg:my-24 my-8">
-            <div>
-                <h1 className="lg:text-4xl text-xl text-[#a47138] mb-4">Industry Experience</h1>
-                {experiencePoints.map((service) => (
-                    <li key={service} className='lg:text-xl ml-4'>{service}</li>
-                ))}
-                <h1 className="lg:text-4xl text-xl text-[#a47138] mt-8 mb-4">Why Choose Us?</h1>
+                <div>
+                    <h1 className="lg:text-4xl text-xl text-[#a47138] mb-4">Industry Experience</h1>
+                    {experiencePoints.map((service) => (
+                        <li key={service} className='lg:text-xl ml-4'>{service}</li>
+                    ))}
+                    <h1 className="lg:text-4xl text-xl text-[#a47138] mt-8 mb-4">Why Choose Us?</h1>
 
-                {choicePoints.map((strategy) => (
-                    <li key={strategy} className='lg:text-xl ml-4'>{strategy}</li>
-                ))}
-            </div>
+                    {choicePoints.map((strategy) => (
+                        <li key={strategy} className='lg:text-xl ml-4'>{strategy}</li>
+                    ))}
+                </div>
                 <div className='max-lg:hidden bg-[url(/services1.jpg) bg-cover bg-center rounded-lg shadow-lg h-[500]'/>
+          </div>
+            <h1 className="text-5xl text-[#a47138] font-semibold text-center mb-16">Who We Have Worked With</h1>
+          <div className="grid grid-cols-3 gap-10">
+            {clients.map((client) => (
+                <div className="flex items-center justify-center"><img src={client} alt={client} /></div>
+            ))}
           </div>
         </section>
     )
