@@ -14,7 +14,7 @@ const Contact = () => {
         {contacts.map((contact) => (
             <div className=" flex border-white lg:w-1/2 mx-auto justify-center items-center gap-4" key={contact.value}>
                 {contact.icon} 
-                <h1 className="lg:text-5xl text-2xl font-semibold text-white">{contact.value}</h1>
+                <h1 className="lg:text-5xl text-xl font-semibold text-white">{contact.value}</h1>
             </div>
         ))}
       </div>

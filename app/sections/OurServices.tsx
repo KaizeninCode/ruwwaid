@@ -106,7 +106,7 @@ const OurServices = () => {
             <h1 className="lg:text-5xl text-xl text-[#a47138] font-semibold text-center lg:mb-16 mb-8">Who We Have Worked With</h1>
           <div className="grid grid-cols-3 gap-10">
             {clients.map((client) => (
-                <div className="flex items-center justify-center"><img src={client} alt={client} /></div>
+                <div className="flex items-center justify-center" key={client}><img src={client} alt={client} /></div>
             ))}
           </div>
         </section>
