@@ -20,7 +20,7 @@ const AboutUs = () => {
             Ruwwad is built on a simple truth: sustainable business performance starts with people.
             We work at the intersection of strategy, people and culture guiding leaders to build agile organizations.
             <br /><br />
-            Since our inception in 2022, we've supported ambitious companies across industries with insights,
+            Since our inception in 2022, we&apos;ve supported ambitious companies across industries with insights,
             frameworks and tools that bridge local realities with global standards.
             </p>
         </div>
