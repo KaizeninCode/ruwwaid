@@ -15,7 +15,7 @@ const Header = () => {
       </a>
       <nav className='flex justify-around gap-16 text-lg'>
         {navLinks.map((link) => (
-            <a href={link.href} key={link.href} className='hover:text-[#a47138] hover:scale-102 transition duration-700 ease-in-out'>{link.name}</a>
+            <a href={link.href} key={link.href} className='hover:text-[#a47138] hover:scale-102 text-xl transition duration-700 ease-in-out'>{link.name}</a>
         ))}
       </nav>
     </header>
