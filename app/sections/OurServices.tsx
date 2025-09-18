@@ -103,7 +103,7 @@ const OurServices = () => {
                 </div>
                 <div className='max-lg:hidden bg-[url(/services1.jpg) bg-cover bg-center rounded-lg shadow-lg h-[500]'/>
           </div>
-            <h1 className="text-5xl text-[#a47138] font-semibold text-center mb-16">Who We Have Worked With</h1>
+            <h1 className="lg:text-5xl text-xl text-[#a47138] font-semibold text-center lg:mb-16 mb-8">Who We Have Worked With</h1>
           <div className="grid grid-cols-3 gap-10">
             {clients.map((client) => (
                 <div className="flex items-center justify-center"><img src={client} alt={client} /></div>
