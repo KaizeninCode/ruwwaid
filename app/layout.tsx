@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} antialiased font-manrope lg:px-16`}
+        className={`${manrope.variable} antialiased font-manrope text-[#151e27]`}
       >
         <Header/>
         {children}

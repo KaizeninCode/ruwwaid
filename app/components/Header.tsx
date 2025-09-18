@@ -7,7 +7,7 @@ const Header = () => {
         {name: 'Contact', href: '#contact'},
     ]
   return (
-    <header className='max-lg:hidden w-full p-4 dark:border-b dark:border-b-white/50 border-b border-b-[#151e27] flex items-center justify-between'>
+    <header className='max-lg:hidden  w-full px-16 py-4 dark:border-b dark:border-b-white/50 border-b border-b-[#151e27] flex items-center justify-between'>
       <a href="#" className='cursor-pointer'>
           <div>
             <img src="/ruwwad-logo.png" alt="Ruwwad Limited Logo" className='h-16 w-24'/>
