@@ -12,7 +12,7 @@ const AboutUs = () => {
     <section id='about-us' className='max-w-7xl mx-auto px-4 py-16 min-h-screen'>
       <div className="max-lg:flex max-lg:flex-col grid grid-cols-2 lg:gap-32 gap-8">
         <div className="flex flex-col">
-            <h2 className="font-bold text-[#a48137] lg:text-6xl text-4xl md:text-center mb-8">Who Are We?</h2>
+            <h2 className="font-bold text-[#a48137] lg:text-6xl text-4xl max-md:text-center mb-8">Who Are We?</h2>
             <p className='lg:text-2xl text-lg text-[#151e27] leading-relaxed'>
             Ruwwad Limited is a human capital and business transformation firm headquartered in Nairobi, Kenya.
             We specialize in human capital management, strategic business solutions, and organizational development.
