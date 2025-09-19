@@ -54,15 +54,16 @@ const OurServices = () => {
         '/barre.png',
         '/viewpoint.png',
         '/hyat.png',
-        '/vivacom.png'
+        '/vivacom.png',
+        '/urban-point-hotel.jpeg',
     ]
     return (
-        <section id='our-services' className='mx-auto px-4 lg:py-16 min-h-screen'>
+        <section id='our-services' className='mx-auto px-4 lg:p-24 min-h-screen'>
           <h1 className="lg:text-5xl text-3xl font-bold mb-4 text-[#a47138] text-center">Our Services</h1> 
 
             <p className='mb-8 text-center lg:text-2xl'>We bring deep functional expertise in the following domains:</p>
           <div className="lg:grid lg:grid-cols-2 max-lg:flex max-lg:flex-col-reverse gap-16 lg:my-24">
-                <div>
+                <div className=' lg:flex lg:flex-col lg:items-start lg:pl-32'>
                     <h1 className="lg:text-4xl text-xl text-[#a47138] mb-4">Human Resource Consulting</h1>
                     {hrServices.map((service) => (
                         <li key={service} className='lg:text-xl ml-4'>{service}</li>
@@ -94,7 +95,7 @@ const OurServices = () => {
                 </div>
           </div>
           <div className="lg:grid lg:grid-cols-2 max-lg:flex max-lg:flex-col-reverse gap-16 lg:my-24 my-8">
-                <div>
+                <div className='lg:flex lg:flex-col lg:items-start lg:pl-32'>
                     <h1 className="lg:text-4xl text-xl text-[#a47138] mb-4">Industry Experience</h1>
                     {experiencePoints.map((service) => (
                         <li key={service} className='lg:text-xl ml-4'>{service}</li>

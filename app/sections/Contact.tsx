@@ -3,7 +3,7 @@ import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 
 const Contact = () => {
     const contacts = [
-        {type: 'Phone', value: '+254 705 199 911', icon: <FiPhone className="lg:text-5xl text-2xl text-[#a47138]" />},
+        {type: 'Phone', value: '+254 705 199 911 | +254 729 449 143', icon: <FiPhone className="lg:text-5xl text-2xl text-[#a47138]" />},
         {type: 'Email', value: 'Ruwwadlimited@gmail.com', icon: <FiMail className="lg:text-5xl text-2xl text-[#a47138]" />},
         {type: 'Location', value: 'Nairobi, Kenya', icon: <FiMapPin className="lg:text-5xl text-2xl text-[#a47138]" />},
     ]
@@ -14,7 +14,7 @@ const Contact = () => {
         {contacts.map((contact) => (
             <div className=" flex border-white lg:w-1/2 mx-auto justify-center items-center gap-4" key={contact.value}>
                 {contact.icon} 
-                <h1 className="lg:text-5xl text-xl font-semibold text-white">{contact.value}</h1>
+                <h1 className="lg:text-4xl text-xl font-semibold text-white">{contact.value}</h1>
             </div>
         ))}
       </div>

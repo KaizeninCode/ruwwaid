@@ -13,14 +13,14 @@ const AboutUs = () => {
       <div className="max-lg:flex max-lg:flex-col grid grid-cols-2 lg:gap-32 gap-8">
         <div className="flex flex-col">
             <h2 className="font-bold text-[#a48137] lg:text-6xl text-4xl max-md:text-center mb-8">Who Are We?</h2>
-            <p className='lg:text-2xl text-lg text-[#151e27] leading-relaxed'>
+            <p className='lg:text-2xl text-lg leading-relaxed'>
             Ruwwad Limited is a human capital and business transformation firm headquartered in Nairobi, Kenya.
             We specialize in human capital management, strategic business solutions, and organizational development.
             <br /><br />
             Ruwwad is built on a simple truth: sustainable business performance starts with people.
             We work at the intersection of strategy, people and culture guiding leaders to build agile organizations.
             <br /><br />
-            Since our inception in 2022, we&apos;ve supported ambitious companies across industries with insights,
+            Since our inception, we&apos;ve supported ambitious companies across industries with insights,
             frameworks and tools that bridge local realities with global standards.
             </p>
         </div>
@@ -50,8 +50,8 @@ const AboutUs = () => {
                 <h3 className="font-bold lg:text-5xl text-3xl text-[#a48137] mb-4">Our Core Values</h3>
                 {coreValues.map((value) => (
                     <div className='mb-8 flex flex-col' key={value.name}>
-                        <h4 className='font-semibold lg:text-3xl text-xl text-[#151e27] mb-2'>{value.name}</h4>
-                        <p className='lg:text-xl md:text-lg text-[#151e27]'>{value.description}</p>
+                        <h4 className='lg:text-3xl text-xl mb-2 text-[#a48137]'>{value.name}</h4>
+                        <p className='lg:text-xl md:text-lg'>{value.description}</p>
                     </div>
                 ))}
             </div>
