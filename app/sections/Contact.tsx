@@ -3,7 +3,7 @@ import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 
 const Contact = () => {
     const contacts = [
-        {type: 'Phone', value: '+254 705 199 911 | +254 729 449 143', icon: <FiPhone className="lg:text-5xl text-2xl text-[#a47138]" />},
+        // {type: 'Phone', value: '+254 705 199 911 | +254 729 449 143', icon: <FiPhone className="lg:text-5xl text-2xl text-[#a47138]" />},
         {type: 'Email', value: 'careers@ruwwadlimited.com', icon: <FiMail className="lg:text-5xl text-2xl text-[#a47138]" />},
         {type: 'Location', value: 'Nairobi, Kenya', icon: <FiMapPin className="lg:text-5xl text-2xl text-[#a47138]" />},
     ]
