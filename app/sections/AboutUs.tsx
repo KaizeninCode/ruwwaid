@@ -2,39 +2,56 @@ import React from 'react'
 
 const AboutUs = () => {
     const coreValues = [
-        {name: 'Integrity', description: ' We act with honesty, clarity and accountability in everything we do.'},
-        {name: 'Excellence', description: ' We strive for the highest professional standards in all we do.'},
-        {name: 'Client Centricity', description: '  Every solution is built around your unique culture and goals.'},
-        {name: 'Empowerment', description: ' We build internal capabilities to future-proof your business.'},
-        {name: 'Impact', description: '  We are here to drive meaningful, measurable change.'},
+        {name: 'Professionalism', description: ' We uphold the highest standards of competence, respect, and ethical conduct in very engagement.'},
+        {name: 'Customer Focus', description: ' Our clients are at the heart of everything we do, and we tailor solutions to their unique needs.'},
+        {name: 'Integrity', description: '  We act with honesty, transparency, and accountability, building trust that lasts.'},
+        {name: 'Sustainable Partnership', description: ' We foster long term relationships that drive resilience, collaboration, and shared success.'},
+        {name: 'Growth', description: '  We empower organizations and individuals to achieve continuous development and measurable progress.'},
+    ]
+
+    const missionPoints = [
+      {point: 'Drive performance', description: 'by unlocking people\'s potential and aligning strategy with execution'},
+      {point: 'Ensure compliance', description: 'with robust frameworks and ethical practice'},
+      {point: 'Create lasting business value', description: 'by building agile, future-ready organizations'},
     ]
   return (
-    <section id='about-us' className='max-w-7xl mx-auto px-4 py-16 min-h-screen'>
+    <section id='about-us' className='max-w-7xl mx-auto p-20 min-h-screen'>
       <div className="max-lg:flex max-lg:flex-col grid grid-cols-2 lg:gap-32 gap-8">
         <div className="flex flex-col">
             <h2 className="font-bold text-[#a48137] lg:text-6xl text-4xl max-md:text-center mb-8">Who Are We?</h2>
             <p className='lg:text-2xl text-lg leading-relaxed'>
             Ruwwad Limited is a human capital and business transformation firm headquartered in Nairobi, Kenya.
-            We specialize in human capital management, strategic business solutions, and organizational development.
             <br /><br />
-            Ruwwad is built on a simple truth: sustainable business performance starts with people.
-            We work at the intersection of strategy, people and culture guiding leaders to build agile organizations.
+            <span className='lg:text-3xl text-xl text-[#a48137] font-semibold'>Our Expertise</span>
+            <br />
+            Human capital management, strategic business solutions, and organizational development.
             <br /><br />
-            Since our inception, we&apos;ve supported ambitious companies across industries with insights,
-            frameworks and tools that bridge local realities with global standards.
+            <span className='lg:text-3xl text-xl text-[#a48137] font-semibold'>Our Philosophy</span>
+            <br />
+            Sustainable business performance starts with people.
+            <br /><br />
+            <span className='lg:text-3xl text-xl text-[#a48137] font-semibold'>Our Approach</span>
+            <br />
+            We operate at the intersection of strategy, people, and culture—helping leaders build agile organizations.
+            <br /><br />
+            <span className='lg:text-3xl text-xl text-[#a48137] font-semibold'>Our Impact</span>
+            <br />
+            Since inception, we have become the recruiter of choice for ambitious companies across industries, delivering insights, frameworks, and tools that bridge local realities with global standards.
+            <br />
             </p>
         </div>
         <div className="rounded-xl shadow-xl bg-[url(/people.jpg)] bg-center bg-cover max-lg:h-96 w-full"/>
       </div>
       {/* mission, vision and core values */}
-      <div className="grid grid-cols-2 lg:mt-32 mt-8 gap-8 max-lg:grid-cols-1">
+      <div className="lg:mt-32 mt-8 gap-8">
         <div className="flex flex-col items-center p-4">
             <h3 className="font-bold lg:text-5xl text-3xl text-[#a48137] mb-4">Our Mission</h3>
-            <p className='lg:text-2xl md:text-xl text-lg leading-relaxed'>
-            To empower organizations and individuals through human-centered,
-            high-impact consulting solutions that drive performance, ensure compliance
-            and create lasting business value.
-            </p>
+            <p className="text-2xl mb-4">To empower organizations and individuals through human-centered, high-impact consulting solutions that:</p>
+            <div className="text-left">
+            {missionPoints.map((point, index) => (
+                <li className="mb-3 lg:text-2xl text-xl" key={index}><strong>{point.point}</strong> {point.description}</li>
+              ))}
+              </div>
         </div>
         <div className="flex flex-col items-center p-4">
             <h3 className="font-bold lg:text-5xl text-3xl text-[#a48137] mb-4">Our Vision</h3>
